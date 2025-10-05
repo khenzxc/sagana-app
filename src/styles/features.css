@@ -58,7 +58,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* ✅ Tablet adjustments */
+/*  Tablet adjustments */
 @media (max-width: 1024px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -76,7 +76,7 @@
   }
 }
 
-/* ✅ Mobile adjustments only */
+/*  Mobile adjustments only */
 @media (max-width: 768px) {
   .features-section {
     height: auto;
@@ -109,7 +109,7 @@
   }
 }
 
-/* ✅ Small mobile */
+/*  Small mobile */
 @media (max-width: 480px) {
   .features-section {
     padding: 3rem 0.5rem;
