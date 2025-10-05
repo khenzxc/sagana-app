@@ -132,7 +132,7 @@
 }
 
 /* ==========================
-   💻 TABLET (768px - 1024px)
+    TABLET (768px - 1024px)
 ========================== */
 @media (max-width: 1024px) {
   .hero-grid {
@@ -179,7 +179,7 @@
 }
 
 /* ==========================
-   📱 MOBILE (max-width: 768px)
+    MOBILE (max-width: 768px)
 ========================== */
 @media (max-width: 768px) {
   .main-content {
@@ -187,7 +187,7 @@
     overflow-x: hidden;
   }
 
-  /* ✅ Put logo on top in mobile */
+  /*  Put logo on top in mobile */
   .hero-grid {
     flex-direction: column-reverse; /* logo goes to top */
     align-items: center;
@@ -272,7 +272,7 @@
 }
 
 /* ==========================
-   📱 SMALL MOBILE (max-width: 480px)
+    SMALL MOBILE (max-width: 480px)
 ========================== */
 @media (max-width: 480px) {
   .hero-grid {
@@ -313,7 +313,7 @@
 }
 
 /* ==========================
-   📱 EXTRA SMALL (max-width: 360px)
+    EXTRA SMALL (max-width: 360px)
 ========================== */
 @media (max-width: 360px) {
   .hero-content .greeting {
