@@ -1,0 +1,105 @@
+.carousel-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 48px 0;
+
+  box-shadow:
+    0 -4px 6px -2px rgba(0, 0, 0, 0.15),
+    /* shadow sa top */
+    0 4px 6px -2px rgba(0, 0, 0, 0.15);
+  /* shadow sa bottom */
+}
+
+.carousel-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Title */
+.carousel-title {
+  font-size: 1.6rem;
+  font-weight: 540;
+  color: #006610;
+  margin-bottom: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding-left: 72px;
+}
+
+/* Flex for carousel */
+.carousel-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Arrows */
+.carousel-arrow {
+  flex-shrink: 0;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.carousel-arrow:hover {
+  background-color: #f9fafb;
+}
+
+.carousel-arrow-icon {
+  width: 40px;
+  height: 40px;
+  color: #a8bcdb;
+}
+
+/* Cards */
+.carousel-cards {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.carousel-card-outer {
+  flex: 1;
+  min-width: 0;
+}
+
+.carousel-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-card-title-container {
+  padding: 20px;
+}
+
+.carousel-card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111827;
+  text-align: center;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+
+}

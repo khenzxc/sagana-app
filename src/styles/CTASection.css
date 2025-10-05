@@ -1,0 +1,195 @@
+
+.hero-cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 4rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-cta-content {
+  flex: 1;
+  max-width: 600px;
+  z-index: 5;
+}
+
+.hero-cta-title {
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  max-width: 600px; /* 💡 control kung saan puputol ang text */
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.hero-cta-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 2rem;
+}
+
+.hero-cta-button {
+  background-color: #0F9100;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.hero-cta-button:hover {
+  background-color: #62da1e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+}
+
+.hero-cta-images {
+  flex: 1;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-farmer-image {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-farmer-top {
+  width: 300px;
+  height: 300px;
+  top: -10%;
+  right: 35%;
+  z-index: 3;
+}
+.hero-farmer-right {
+  width: 300px;
+  height: 300px;
+  top: 25%;
+  right: -10%;
+  z-index: 3;
+}
+
+.hero-farmer-bottom {
+  width: 350px;
+  height: 350px;
+  bottom: -10%;
+  left: 5%;
+  z-index: 2;
+}
+
+.hero-yellow-shape {
+  position: absolute;
+  width: 950px;
+  height: 550px;
+  background: linear-gradient(to left, #006610, #FFD600); /* both green */
+  border-radius: 50%;
+  right: -575px; /* kalahati ng 550px para half lang ang kita */
+  top: 34%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.hero-green-dot {
+  position: absolute;
+  background-color: #006610;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.hero-dot-1 {
+  width: 70px;
+  height: 70px;
+  top: 35%;
+  right: 70%;
+}
+
+.hero-dot-2 {
+  width: 100px;
+  height: 100px;
+  bottom: 8%;
+  right: 8%;
+}
+
+/* Responsive para sa hero section */
+@media (max-width: 1024px) {
+  .hero-cta-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+  
+  .hero-cta-content {
+    max-width: 100%;
+  }
+  
+  .hero-cta-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-cta-images {
+    min-height: 500px;
+    width: 100%;
+  }
+  
+  .hero-farmer-top {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .hero-farmer-bottom {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cta-title {
+    font-size: 2rem;
+  }
+  
+  .hero-cta-description {
+    font-size: 1rem;
+  }
+  
+  .hero-farmer-top {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .hero-farmer-bottom {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .hero-yellow-shape {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hero-dot-1 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hero-dot-2 {
+    width: 70px;
+    height: 70px;
+  }
+}
