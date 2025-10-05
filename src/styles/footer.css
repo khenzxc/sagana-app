@@ -59,7 +59,7 @@
   transform: scale(1.15);
 }
 
-/* 📱 Responsive */
+/*  Responsive */
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
