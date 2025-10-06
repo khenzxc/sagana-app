@@ -8,24 +8,24 @@ export default function TimelineSection() {
       {/* Timeline Section */}
       <section className="timeline-section">
 
-        {/* Illustration left side */}
+        {/* Left illustration */}
         <div className="timeline-illustration">
-          <img 
-            src={`${import.meta.env.BASE_URL}Ellipse 2.png`} 
-            alt="Farmers illustration" 
+          <img
+            src={`${import.meta.env.BASE_URL}Ellipse 2.png`}
+            alt="Farmers illustration"
           />
         </div>
 
-        {/* Bottom farmer images */}
-        <img 
-          src={`${import.meta.env.BASE_URL}SAGANA (51) 1.png`} 
-          alt="Farmer planting in a rice paddy" 
-          className="farmer-image-bottom" 
+        {/* Farmer Images */}
+        <img
+          src={`${import.meta.env.BASE_URL}SAGANA (51) 1.png`}
+          alt="Farmer planting in a rice paddy"
+          className="farmer-image-bottom"
         />
-        <img 
-          src={`${import.meta.env.BASE_URL}SAGANA (41) 1.png`} 
-          alt="Farmer planting in a rice paddy" 
-          className="farmer-image2-bottom" 
+        <img
+          src={`${import.meta.env.BASE_URL}SAGANA (41) 1.png`}
+          alt="Farmer planting in a rice paddy"
+          className="farmer-image2-bottom"
         />
 
         {/* Timeline content */}
@@ -36,16 +36,16 @@ export default function TimelineSection() {
 
           {/* 2026 */}
           <div className="timeline-item left">
-            <img 
-              src={`${import.meta.env.BASE_URL}35 2.png`} 
-              alt="AI Icon" 
-              className="timeline-icon" 
+            <img
+              src={`${import.meta.env.BASE_URL}35 2.png`}
+              alt="AI Icon"
+              className="timeline-icon"
             />
             <div className="timeline-text">
               <h3>2026</h3>
               <p>
-                SAGANA will <strong>integrate AI-powered financial guidance</strong>, 
-                giving farmers and fisherfolk personalized savings tips and secure 
+                SAGANA will <strong>integrate AI-powered financial guidance</strong>,
+                giving farmers and fisherfolk personalized savings tips and secure
                 transaction tracking.
               </p>
             </div>
@@ -56,29 +56,29 @@ export default function TimelineSection() {
             <div className="timeline-text">
               <h3>2027</h3>
               <p>
-                SAGANA will <strong>expand with cooperative and marketplace integration</strong>, 
-                enabling farmers and fisherfolk to directly access suppliers, buyers, 
+                SAGANA will <strong>expand with cooperative and marketplace integration</strong>,
+                enabling farmers and fisherfolk to directly access suppliers, buyers,
                 and digital cooperatives.
               </p>
             </div>
-            <img 
-              src={`${import.meta.env.BASE_URL}36 2.png`} 
-              alt="Marketplace Icon" 
-              className="timeline-icon" 
+            <img
+              src={`${import.meta.env.BASE_URL}36 2.png`}
+              alt="Marketplace Icon"
+              className="timeline-icon"
             />
           </div>
 
-          {/* 2028 */}
+          {/* 2028 and beyond */}
           <div className="timeline-item left">
-            <img 
-              src={`${import.meta.env.BASE_URL}37 2.png`} 
-              alt="Growth Icon" 
-              className="timeline-icon" 
+            <img
+              src={`${import.meta.env.BASE_URL}37 2.png`}
+              alt="Growth Icon"
+              className="timeline-icon"
             />
             <div className="timeline-text">
               <h3>2028 and Beyond</h3>
               <p>
-                SAGANA will grow into a complete decentralized ecosystem, 
+                SAGANA will grow into a complete decentralized ecosystem,
                 <strong> offering blockchain-based savings, microloans, insurance, and more.</strong>
               </p>
             </div>
@@ -100,26 +100,38 @@ export default function TimelineSection() {
           <button className="hero-cta-button">Grow with Sagana</button>
         </div>
 
-        {/* Farmer Images */}
+        {/* Farmer Images and Shapes */}
         <div className="hero-cta-images">
+          {/* Green dots - FIRST (lowest z-index) */}
           <div className="hero-green-dot hero-dot-1"></div>
-          <img 
-            src={`${import.meta.env.BASE_URL}33 1.png`} 
-            alt="Woman farmer" 
-            className="hero-farmer-image hero-farmer-top" 
-          />
-          <img 
-            src={`${import.meta.env.BASE_URL}34 1.png`} 
-            alt="Farmer planting rice" 
-            className="hero-farmer-image hero-farmer-bottom" 
-          />
-          <img 
-            src={`${import.meta.env.BASE_URL}35 3.png`} 
-            alt="Farmer" 
-            className="hero-farmer-image hero-farmer-right" 
-          />
           <div className="hero-green-dot hero-dot-2"></div>
+
+          {/* Farmer images - SECOND */}
+          <img
+            src={`${import.meta.env.BASE_URL}34 1.png`}
+            alt="Farmer planting rice"
+            className="hero-farmer-image hero-farmer-top"
+          />
+          <img
+            src={`${import.meta.env.BASE_URL}33 1.png`}
+            alt="Woman farmer"
+            className="hero-farmer-image hero-farmer-bottom"
+          />
+          <img
+            src={`${import.meta.env.BASE_URL}35 3.png`}
+            alt="Farmer"
+            className="hero-farmer-image hero-farmer-right"
+          />
+
+          {/* Yellow Shape - THIRD */}
           <div className="hero-yellow-shape"></div>
+
+          {/* SAGANA HAND IMAGE - LAST (highest z-index, always on top) */}
+          <img
+            src={`${import.meta.env.BASE_URL}SAGANA (82) 1.png`}
+            alt="SAGANA HAND APP"
+            className="SAGANA-HAND-image"
+          />
         </div>
       </section>
     </>

@@ -1,12 +1,14 @@
+/* Timeline Section */
 .timeline-section {
   position: relative;
   padding: 80px 5%;
   background-color: #fff;
-  overflow: hidden;
   height: 1000px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
   box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.15);
+  overflow: visible;
+  /* allow images to overflow */
 }
 
 .timeline-illustration {
@@ -16,7 +18,6 @@
   width: 80px;
   height: 200px;
   z-index: 1;
-  object-fit: contain;
 }
 
 .timeline-illustration img {
@@ -27,11 +28,12 @@
 
 .farmer-image-top {
   position: absolute;
-  top: 1000px;
+  top: 200px;
   left: 100px;
   width: 350px;
   height: auto;
-  z-index: 3;
+  z-index: 20;
+  /* in front */
 }
 
 .farmer-image-bottom {
@@ -43,6 +45,16 @@
   z-index: 2;
 }
 
+.farmer-image2-bottom {
+  position: absolute;
+  top: 620px;
+  left: 116px;
+  width: 370px;
+  height: auto;
+  z-index: 1;
+}
+
+/* Timeline Content */
 .timeline-content {
   position: relative;
   z-index: 10;
@@ -76,7 +88,6 @@
 
 .timeline-item.right {
   flex-direction: row;
-  align-items: flex-start;
   justify-content: flex-end;
   gap: 20px;
 }
@@ -84,13 +95,13 @@
 .timeline-icon {
   width: 120px;
   height: 120px;
-  flex-shrink: 0;
   margin-bottom: 12px;
+  flex-shrink: 0;
 }
 
 .timeline-item.right .timeline-icon {
-  margin-bottom: 0;
   order: 2;
+  margin-bottom: 0;
 }
 
 .timeline-text {
@@ -117,9 +128,139 @@
   margin: 0;
 }
 
+/* Hero CTA Section */
+.hero-cta-section {
+  position: relative;
+  padding: 4rem 5%;
+  overflow: visible;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-cta-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-cta-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-cta-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.hero-cta-button {
+  background-color: #006610;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta-button:hover {
+  background-color: #004d0c;
+}
+
+.hero-cta-images {
+  position: relative;
+  width: 50%;
+  min-width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.hero-cta-images .hero-green-dot {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background: #006610;
+  position: absolute !important;
+  z-index: 1 !important;
+}
+
+.hero-cta-images .hero-dot-1 {
+  top: 90px !important;
+  left: 50px !important;
+}
+
+.hero-cta-images .hero-dot-2 {
+  bottom: -50px !important;
+  right: 120px !important;
+}
+
+.hero-yellow-shape {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: #FFD600;
+  border-radius: 1.5rem;
+  z-index: 50;
+}
+
+.hero-cta-images .SAGANA-HAND-image {
+  position: absolute !important;
+  top: 50% !important;
+  left: 71% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 450px !important;
+  height: auto !important;
+  z-index: 100 !important;
+}
+
+.hero-cta-images .hero-farmer-image {
+  position: absolute !important;
+  z-index: 2 !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-cta-images .hero-farmer-top {
+  position: absolute !important;
+  top: -80px !important;
+  right: -60px !important;
+  width: 280px !important;
+  height: 280px !important;
+  z-index: 5 !important;
+}
+
+.hero-cta-images .hero-farmer-bottom {
+  position: absolute !important;
+  bottom: -10px !important;
+  left: 20px !important;
+  width: 280px !important;
+  height: 280px !important;
+  z-index: 2 !important;
+}
+
+.hero-cta-images .hero-farmer-right {
+  position: absolute !important;
+  top: 380px !important;
+  right: -10px !important;
+  width: 220px !important;
+  height: 220px !important;
+  z-index: 150 !important;
+}
+
+/* Responsive */
 @media (max-width: 992px) {
   .timeline-content {
     margin-left: 0;
+    text-align: center;
   }
 
   .timeline-item,
@@ -137,14 +278,52 @@
   .timeline-icon {
     margin-bottom: 12px;
   }
-}
 
-.farmer-image2-bottom {
-  position: absolute;
-  top: 620px;
-  left: 116px;
-  width: 370px;
-  height: auto;
-  z-index: 1;
-  /* mas mababa kaysa sa .farmer-image-bottom */
+  .hero-cta-section {
+    flex-direction: column;
+  }
+
+  .hero-cta-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-cta-images {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .hero-yellow-shape {
+    width: 120px;
+    height: 120px;
+  }
+
+  .SAGANA-HAND-image {
+    width: 300px;
+  }
+
+  .hero-farmer-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-farmer-top {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-farmer-bottom {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-farmer-right {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hero-green-dot {
+    width: 60px;
+    height: 60px;
+  }
 }
