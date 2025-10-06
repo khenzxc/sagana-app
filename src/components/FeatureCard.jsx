@@ -4,7 +4,7 @@ export default function FeatureCard({ icon, alt, title, description }) {
   return (
     <div className="feature-card">
       <img 
-        src={icon} 
+        src={`${import.meta.env.BASE_URL}${icon}`} 
         alt={alt} 
         className="feature-icon-img"
       />

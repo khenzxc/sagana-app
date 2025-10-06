@@ -1,8 +1,11 @@
 import React from 'react';
-import "../styles/hero.css"
+import "../styles/hero.css";
+
 export default function Hero() {
   return (
     <div className="hero-grid">
+
+      {/* Left content */}
       <div className="hero-content">
         <h2 className="greeting">Masaganang Araw!</h2>
         <h1 className="hero-title">
@@ -24,9 +27,16 @@ export default function Hero() {
           </button>
         </div>
       </div>
+
+      {/* Right image */}
       <section className="hero">
-        <img src="/sagana-logo.png" alt="SAGANA Logo" className="hero-logo" />
+        <img
+          src={`${import.meta.env.BASE_URL}sagana-logo.png`}
+          alt="SAGANA Logo"
+          className="hero-logo"
+        />
       </section>
+
     </div>
   );
 }

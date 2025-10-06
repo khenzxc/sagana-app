@@ -1,54 +1,46 @@
 import React from 'react';
-import "../styles/sdg.css"
+import "../styles/sdg.css";
+
 export default function SDGSection() {
   const sdgCards = [
     {
       number: 1,
       title: 'No Poverty',
-      image: '/SAGANA (39) 1.png'
+      image: `${import.meta.env.BASE_URL}SAGANA (39) 1.png`
     },
     {
       number: 8,
       title: 'Decent Work and Economic Growth',
-      image: '/SAGANA (40) 1.png'
+      image: `${import.meta.env.BASE_URL}SAGANA (40) 1.png`
     },
     {
       number: 11,
       title: 'Sustainable Cities and Communities',
-      image: '/SDG-11.png'
+      image: `${import.meta.env.BASE_URL}SDG-11.png`
     }
+  ];
+
+  const decorativeShapes = [
+    { src: "Ellipse 1.png", className: "shape-circle large" },
+    { src: "Polygon 2.png", className: "shape-triangle" },
+    { src: "Ellipse 3.png", className: "shape-circle medium" },
+    { src: "Ellipse 4.png", className: "shape-circle small" },
+    { src: "Rectangle 15.png", className: "shape-rectangle" }
   ];
 
   return (
     <section className="sdg-section">
       <div className="sdg-container">
-        {/* Decorative shapes - NOW USING IMAGES */}
+        {/* Decorative shapes */}
         <div className="sdg-shapes">
-          <img 
-            src="/Ellipse 1.png" 
-            alt="" 
-            className="shape-circle large"
-          />
-          <img 
-            src="/Polygon 2.png" 
-            alt="" 
-            className="shape-triangle"
-          />
-          <img 
-            src="/Ellipse 3.png" 
-            alt="" 
-            className="shape-circle medium"
-          />
-          <img 
-            src="/Ellipse 4.png" 
-            alt="" 
-            className="shape-circle small"
-          />
-          <img 
-            src="/Rectangle 15.png" 
-            alt="" 
-            className="shape-rectangle"
-          />
+          {decorativeShapes.map((shape, index) => (
+            <img 
+              key={index}
+              src={`${import.meta.env.BASE_URL}${shape.src}`} 
+              alt="" 
+              className={shape.className}
+            />
+          ))}
         </div>
 
         {/* Content */}
@@ -79,7 +71,7 @@ export default function SDGSection() {
         {/* Illustration */}
         <div className="sdg-illustration">
           <img 
-            src="/SAGANA (50) 1.png" 
+            src={`${import.meta.env.BASE_URL}SAGANA (50) 1.png`} 
             alt="Farmers and Community"
             className="farmers-image"
           />

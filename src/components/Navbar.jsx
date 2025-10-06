@@ -5,12 +5,13 @@ import "../styles/navbar.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
+
+      {/* Left side - logo + links */}
       <div className="navbar-left">
         <div className="logo-container">
-          {/* ✅ Ginawa nating Link ang logo para bumalik sa landing page */}
           <Link to="/" className="logo-link">
             <img
-              src="/sagana-logo1.png"
+              src={`${import.meta.env.BASE_URL}sagana-logo1.png`}
               alt="SAGANA Logo"
               className="logo-img"
             />
@@ -25,6 +26,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Right side - Sign In */}
       <Link to="/signin" className="sign-in-btn">
         Sign In
       </Link>
