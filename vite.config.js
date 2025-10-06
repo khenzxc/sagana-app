@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: '/sagana-app/',  // <-- pangalan ng repo
+  base: "/sagana-app/", // exact repo name sa GitHub
   plugins: [react()],
-})
+});
