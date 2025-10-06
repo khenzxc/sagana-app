@@ -26,7 +26,7 @@ export default function About() {
                 </p>
 
                 <div className="about-logos">
-                    <img src="/sagana-app/psite-logo.png" alt="PSITE Logo" />
+                    <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
                 </div>
             </section>
             
