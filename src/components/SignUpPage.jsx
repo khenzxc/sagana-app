@@ -11,13 +11,16 @@ export default function SignUpPage() {
       alert("Please enter your email address.");
       return;
     }
-
-    // You can store email in localStorage, context, or auth here if needed
-    navigate("/home"); // ✅ redirect to HomePage
+    navigate("/home"); // redirect to HomePage
   };
 
   return (
-    <section className="signup-container">
+    <section
+      className="signup-container"
+      style={{
+        background: `url(${import.meta.env.BASE_URL}farmer-bg.png) center center / cover no-repeat`,
+      }}
+    >
       {/* Left side - Logo */}
       <div className="signup-left">
         <img
