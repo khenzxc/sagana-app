@@ -55,15 +55,19 @@
   margin-top: 1.2rem;
 }
 
-.hero-logo {
+
+.hero-video {
   width: 720px;
-  height: auto;
   max-width: 100%;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: 0.9; /* optional: for semi-transparent effect */
+  mix-blend-mode: multiply; /* optional: makes video blend with background */
   display: block;
   margin-left: auto;
-  margin-right: 0;
-  margin-top: 1.2rem;
+  margin-right: 10rem;
+  margin-top: -1rem;
 }
 
 .button-container {

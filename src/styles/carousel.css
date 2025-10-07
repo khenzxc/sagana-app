@@ -103,3 +103,47 @@
   font-family: system-ui, -apple-system, sans-serif;
 
 }
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 32px 0;
+  }
+
+  .carousel-container {
+    padding: 0 16px;
+  }
+
+  .carousel-title {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-flex {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .carousel-arrow {
+    display: none; /* hide arrows on small screens */
+  }
+
+  .carousel-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .carousel-card-outer {
+    width: 100%;
+    max-width: 320px; /* smaller card width for mobile */
+  }
+
+  .carousel-image-container {
+    height: 180px; /* smaller image height */
+  }
+
+  .carousel-card-title {
+    font-size: 14px;
+  }
+}

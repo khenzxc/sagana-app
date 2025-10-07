@@ -1,25 +1,25 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/global.css";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import About from "./components/About";
+import SignInPage from "./components/SignInPage";
+import SignUpPage from "./components/SignUpPage";
 import Hero from "./components/Hero";
 import FeatureSection from "./components/FeatureSection";
 import CarouselSection from "./components/CarouselSection";
 import SDGSection from "./components/SDGSection";
 import TimelineSection from "./components/TimelineSection";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import SignInPage from "./components/SignInPage";
 
+// Layout para sa pages na may footer
 function Layout({ children }) {
-  const location = useLocation();
-  const showFooter = location.pathname === "/" || location.pathname === "/about"; 
-  // footer only on landing and about
   return (
     <>
       {children}
-      {showFooter && <Footer />}
+      <Footer />
     </>
   );
 }
@@ -28,11 +28,12 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <Layout>
-        <Routes>
-          <Route
-            path="/"
-            element={
+      <Routes>
+        {/* Landing Page */}
+        <Route
+          path="/"
+          element={
+            <Layout>
               <main className="main-content">
                 <Hero />
                 <FeatureSection />
@@ -40,12 +41,20 @@ export default function App() {
                 <SDGSection />
                 <TimelineSection />
               </main>
-            }
-          />
-          <Route path="/about" element={<About />} />
-          <Route path="/signin" element={<SignInPage />} />
-        </Routes>
-      </Layout>
+            </Layout>
+          }
+        />
+
+        {/* Home Page (after SignUp / Login) */}
+        <Route path="/home" element={<Layout><HomePage /></Layout>} />
+
+        {/* About Page */}
+        <Route path="/about" element={<Layout><About /></Layout>} />
+
+        {/* Sign In / Sign Up (no footer) */}
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+      </Routes>
     </Router>
   );
 }

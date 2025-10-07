@@ -1,0 +1,347 @@
+/* ✅ Apply Roboto globally for the signup page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* SIGNUP PAGE BASE */
+.signup-page {
+  margin: 0;
+  padding: 0;
+  min-height: 120vh;
+  overflow-x: hidden;
+}
+
+.signup-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background: url("./farmer-bg.png") center center / cover no-repeat;
+  padding: 0 80px;
+  margin-top: -90px; /* adjust to navbar height */
+  z-index: 0;
+}
+
+
+/* LEFT SIDE */
+.signup-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-logo {
+  margin-top: 30px;
+  width: 460px;
+  max-width: 80%;
+  height: auto;
+}
+
+/* RIGHT SIDE */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  background-color: #f2f2f2;
+  padding: 50px 30px;
+  border-radius: 20px;
+  width: 430px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  border: 3px solid #fff;
+}
+
+.signup-card h2 {
+  color: #056710;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: 20px;
+
+  /* ✅ black text */
+  color: #000;
+  caret-color: #0f9100;
+}
+
+.no-email {
+  color: #0f9100;
+  font-size: 1rem;
+  margin: 15px 0 30px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.no-email:hover {
+  color: #0c6e00;
+  text-decoration: underline;
+}
+
+.signup-next-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #0F9100;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-next-btn:hover {
+  background-color: #0c6e00;
+}
+/* ✅ Apply Roboto globally for the signup page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* SIGNUP PAGE BASE */
+.signup-page {
+  margin: 0;
+  padding: 0;
+  min-height: 120vh;
+  overflow-x: hidden;
+}
+
+.signup-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background: url("./farmer-bg.png") center center / cover no-repeat;
+  padding: 0 80px;
+  margin-top: -90px; /* adjust to navbar height */
+  z-index: 0;
+}
+
+/* LEFT SIDE */
+.signup-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-logo {
+  margin-top: 30px;
+  width: 460px;
+  max-width: 80%;
+  height: auto;
+}
+
+/* RIGHT SIDE */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  background-color: #f2f2f2;
+  padding: 50px 30px;
+  border-radius: 20px;
+  width: 430px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  border: 3px solid #fff;
+}
+
+.signup-card h2 {
+  color: #056710;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: 20px;
+
+  color: #000; /* black text */
+  caret-color: #0f9100;
+}
+
+.no-email {
+  color: #0f9100;
+  font-size: 1rem;
+  margin: 15px 0 30px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.no-email:hover {
+  color: #0c6e00;
+  text-decoration: underline;
+}
+
+.signup-next-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #0F9100;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-next-btn:hover {
+  background-color: #0c6e00;
+}
+
+/* ✅ TABLET VIEW (≤ 1024px) */
+@media (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    height: auto;
+  }
+
+  .signup-left {
+    margin-bottom: 30px;
+  }
+
+  .signup-logo {
+    width: 380px;
+    max-width: 90%;
+  }
+
+  .signup-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+/* ✅ MOBILE VIEW (≤ 768px) */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 40px 20px;
+    margin-top: -70px;
+    background-position: center;
+  }
+
+  .signup-logo {
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .signup-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 25px;
+  }
+
+  .signup-card h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .signup-right {
+    margin-bottom: 40px;
+  }
+
+  .signup-next-btn {
+    font-size: 1rem;
+  }
+}
+
+/* ✅ SMALL MOBILE (≤ 480px) */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 30px 15px;
+  }
+
+  .signup-logo {
+    width: 240px;
+    margin-top: 0;
+  }
+
+  .signup-card {
+    padding: 30px 20px;
+    max-width: 340px;
+  }
+
+  .signup-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .signup-input {
+    font-size: 0.9rem;
+    padding: 12px 4px;
+  }
+
+  .signup-next-btn {
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+}
+@media (max-width: 900px) {
+  .signup-container {
+    flex-direction: column;
+    justify-content: center; /* ✅ center vertical */
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px;
+    height: 100dvh; /* ✅ dynamic viewport height — fixes background cut-off */
+    min-height: 100vh; /* fallback */
+    width: 100vw;
+    margin-top: -70px;
+    background: url("./farmer-bg.png") center center / cover no-repeat;
+    background-attachment: scroll; /* ensures proper scaling */
+  }
+
+  .signup-left {
+    margin-bottom: 20px;
+  }
+
+  .signup-logo {
+    width: 260px;
+    margin-top: 0;
+  }
+
+  .signup-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 35px 25px;
+  }
+}

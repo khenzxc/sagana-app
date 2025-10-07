@@ -1,3 +1,4 @@
+// Hero.jsx
 import React from 'react';
 import "../styles/hero.css";
 
@@ -28,13 +29,17 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right image */}
       <section className="hero">
-        <img
-          src={`${import.meta.env.BASE_URL}sagana-logo.png`}
-          alt="SAGANA Logo"
-          className="hero-logo"
-        />
+        <video
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={`${import.meta.env.BASE_URL}sagana-vid.mp4`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
     </div>

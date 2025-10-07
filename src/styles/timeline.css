@@ -60,6 +60,7 @@
   z-index: 10;
   margin-left: 520px;
   text-align: right;
+  margin-right: 50px;
 }
 
 .timeline-title {
@@ -80,39 +81,55 @@
 }
 
 .timeline-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  position: relative;
+  /* ✅ para base ng icon positioning */
   margin-bottom: 10px;
+  padding-top: 80px;
+  /* space sa taas para icon */
 }
 
-.timeline-item.right {
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
+/* ✅ Icon: malayang galaw, di naaapektuhan text */
 .timeline-icon {
+  position: absolute;
+  top: -40px;
+  /* i-adjust mo 'to para itaas/baba */
+  left: -30px;
+  /* pwede mo galawin left/right depende sa gusto mo */
   width: 120px;
   height: 120px;
-  margin-bottom: 12px;
-  flex-shrink: 0;
+  z-index: 5;
 }
 
+/* Right side item – pwede mo ring ilipat icon separately */
 .timeline-item.right .timeline-icon {
-  order: 2;
-  margin-bottom: 0;
+  left: auto;
+  right: -30px;
+  /* adjust mo ito para sa right side */
+  top: -50px;
+  /* pwede iangat/baba */
 }
 
 .timeline-text {
+  position: relative;
+  /* stays normal */
   max-width: 440px;
   text-align: left;
+  z-index: 10;
+  /* mas mataas kaysa icon kung gusto mo */
 }
 
 .timeline-item.right .timeline-text {
   text-align: right;
-  order: 1;
+  margin-left: auto;
 }
+
+/* Target lang yung text ng 2027 (2nd timeline-item) */
+.timeline-item:nth-of-type(2) .timeline-text {
+  position: relative;
+  top: -10px;
+  /* 🔼 iangat mo – adjust mo value kung gusto mo mas mataas */
+}
+
 
 .timeline-text h3 {
   font-size: 28px;
@@ -258,9 +275,24 @@
 
 /* Responsive */
 @media (max-width: 992px) {
+
+  /* Timeline Section */
+  .timeline-section {
+    padding: 20px 5%;
+    height: auto;
+  }
+
   .timeline-content {
     margin-left: 0;
     text-align: center;
+    padding: 0 10px;
+  }
+
+  .timeline-title {
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    text-align: right;
   }
 
   .timeline-item,
@@ -268,62 +300,136 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 15px;
+    gap: 8px;
   }
 
   .timeline-text,
   .timeline-item.right .timeline-text {
-    text-align: center;
+    text-align: left;
+  }
+
+  .timeline-text h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .timeline-text p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
   }
 
   .timeline-icon {
-    margin-bottom: 12px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  /* ✅ Timeline illustration image - shrink on mobile */
+  .timeline-illustration {
+    width: 160px;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .timeline-illustration img {
+    width: 300px;
+    height: auto;
+  }
+
+  /* ✅ Farmer images - resize on mobile */
+  .farmer-image-bottom {
+    width: 280px;
+    top: 60px;
+    left: 0;
+  }
+
+  .farmer-image2-bottom {
+    width: 280px;
+    top: 400px;
+    left: 40px;
+  }
+
+  .farmer-image-top {
+    width: 160px;
+    top: 140px;
+    left: 40px;
+  }
+
+  /* Hero CTA Section */
   .hero-cta-section {
     flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 5%;
+    align-items: center;
   }
 
   .hero-cta-content {
     max-width: 100%;
     text-align: center;
+    margin-top: 1.5rem;
+    /* ✅ mas mababa na */
+  }
+
+  .hero-cta-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .hero-cta-description {
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1rem;
+  }
+
+  .hero-cta-button {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
   }
 
   .hero-cta-images {
     width: 100%;
     min-width: 100%;
+    margin-bottom: 1.5rem;
+    height: auto;
   }
 
   .hero-yellow-shape {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .SAGANA-HAND-image {
-    width: 300px;
+    width: 220px;
   }
 
   .hero-farmer-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .hero-farmer-top {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-farmer-bottom {
     width: 100px;
     height: 100px;
   }
 
-  .hero-farmer-bottom {
-    width: 120px;
-    height: 120px;
-  }
-
   .hero-farmer-right {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   .hero-green-dot {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 }

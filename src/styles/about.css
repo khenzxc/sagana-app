@@ -51,22 +51,43 @@
   font-weight: 600;
 }
 
+/* Add this to your about.css file */
+
 .about-logos {
   position: absolute;     
   top: 60px;              
   right: 12%;             
+  width: 400px;
+  overflow: hidden;
   display: flex;
-  gap: 25px;
   align-items: center;
-  justify-content: flex-end;
-  width: auto;
+}
+
+.logos-track {
+  display: flex;
+  gap: 0px;
+  animation: slideLoop 18s linear infinite;
 }
 
 .about-logos img {
   height: 100px;
   width: auto;
+  flex-shrink: 0;
 }
 
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Pause on hover */
+.about-logos:hover .logos-track {
+  animation-play-state: paused;
+}
 
 @media (max-width: 1024px) {
   .about-container {

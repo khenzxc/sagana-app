@@ -7,7 +7,6 @@ export default function TimelineSection() {
     <>
       {/* Timeline Section */}
       <section className="timeline-section">
-
         {/* Left illustration */}
         <div className="timeline-illustration">
           <img
@@ -53,6 +52,11 @@ export default function TimelineSection() {
 
           {/* 2027 */}
           <div className="timeline-item right">
+            <img
+              src={`${import.meta.env.BASE_URL}36 2.png`}
+              alt="Marketplace Icon"
+              className="timeline-icon"
+            />
             <div className="timeline-text">
               <h3>2027</h3>
               <p>
@@ -61,14 +65,9 @@ export default function TimelineSection() {
                 and digital cooperatives.
               </p>
             </div>
-            <img
-              src={`${import.meta.env.BASE_URL}36 2.png`}
-              alt="Marketplace Icon"
-              className="timeline-icon"
-            />
           </div>
 
-          {/* 2028 and beyond */}
+          {/* 2028 and Beyond */}
           <div className="timeline-item left">
             <img
               src={`${import.meta.env.BASE_URL}37 2.png`}
@@ -79,7 +78,8 @@ export default function TimelineSection() {
               <h3>2028 and Beyond</h3>
               <p>
                 SAGANA will grow into a complete decentralized ecosystem,
-                <strong> offering blockchain-based savings, microloans, insurance, and more.</strong>
+                <strong> offering blockchain-based savings, microloans, insurance, cross-border payments </strong>
+                - securing inclusive finance for future generations of farmers and fisherfolk.
               </p>
             </div>
           </div>
@@ -102,11 +102,9 @@ export default function TimelineSection() {
 
         {/* Farmer Images and Shapes */}
         <div className="hero-cta-images">
-          {/* Green dots - FIRST (lowest z-index) */}
           <div className="hero-green-dot hero-dot-1"></div>
           <div className="hero-green-dot hero-dot-2"></div>
 
-          {/* Farmer images - SECOND */}
           <img
             src={`${import.meta.env.BASE_URL}34 1.png`}
             alt="Farmer planting rice"
@@ -123,10 +121,8 @@ export default function TimelineSection() {
             className="hero-farmer-image hero-farmer-right"
           />
 
-          {/* Yellow Shape - THIRD */}
           <div className="hero-yellow-shape"></div>
 
-          {/* SAGANA HAND IMAGE - LAST (highest z-index, always on top) */}
           <img
             src={`${import.meta.env.BASE_URL}SAGANA (82) 1.png`}
             alt="SAGANA HAND APP"

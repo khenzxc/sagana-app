@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/about.css"
-import Footer
- from "./Footer";
+import Footer from "./Footer";
+
 export default function About() {
     return (
         <div className="about-page">
@@ -26,12 +26,16 @@ export default function About() {
                 </p>
 
                 <div className="about-logos">
-                    <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                    <div className="logos-track">
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                        <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
+                    </div>
                 </div>
             </section>
-            
-            
         </div>
-        
     );
 }
