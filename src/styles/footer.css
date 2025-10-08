@@ -29,7 +29,8 @@
 .footer-text {
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  display: inline-block;
+  transform: translateX(50px); /* 20px to the right */
 }
 
 .social-icons {

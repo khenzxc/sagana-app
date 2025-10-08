@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6rem 1.5rem; /* dati 1rem 2rem → binawasan */
+  padding: 1rem 2rem;
   border-bottom: 1px solid #e5e7eb;
 
   position: fixed;
@@ -29,7 +30,9 @@ body {
   width: 100%;
   background-color: #fff;
   z-index: 1000;
+
 }
+
 .navbar-left {
   display: flex;
   align-items: center;
@@ -61,11 +64,12 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
 .nav-links a {
   color: #6b7280;
   text-decoration: none;
   transition: color 0.3s;
+  font-family: 'Roboto', sans-serif !important; /* 🔥 add !important to force override */
+  font-weight: 400;
 }
 
 .nav-links a:hover {

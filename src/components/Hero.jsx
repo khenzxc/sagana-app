@@ -1,4 +1,3 @@
-// Hero.jsx
 import React from 'react';
 import "../styles/hero.css";
 
@@ -18,17 +17,29 @@ export default function Hero() {
           growing, and managing your income simple, fair, and accessible for all.
         </p>
         <div className="button-container">
+
+          {/* Get Started button */}
           <button className="primary-btn">
             <span className="btn-icon"></span>
             Get Started with Base
           </button>
-          <button className="secondary-btn">
+
+          {/* Watch Video button */}
+          <button
+            className="secondary-btn"
+            onClick={() => window.open(
+              "https://drive.google.com/file/d/1NiG3FNATadZPVs_pMfC9UhPeg1j3Hvnn/view?usp=drivesdk",
+              "_blank"
+            )}
+          >
             <span className="play-icon">▶</span>
             Watch Video
           </button>
+
         </div>
       </div>
 
+      {/* Right content: video */}
       <section className="hero">
         <video
           className="hero-video"
