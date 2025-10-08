@@ -96,7 +96,9 @@
   .footer-text {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
+    margin-right: 6rem;
   }
+  
 
   .social-icons {
     gap: 0.5rem;

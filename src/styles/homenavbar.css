@@ -103,3 +103,60 @@ body {
   font-size: 1.8rem;
   color: #15803d;
 }
+
+/* PROFILE DROPDOWN MENU */
+.profile-dropdown {
+  position: absolute;
+  top: 65px; /* adjust based on navbar height */
+  right: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  padding: 8px 0;
+  z-index: 2000;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  color: #374151;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6;
+    color: #0F9100;
+}
+
+.logout-btn {
+  color: #dc2626 !important; /* ✅ stays red */
+}
+
+/* Profile icon active (clicked) state */
+.profile-container.active {
+  background-color: #d1fae5;
+  box-shadow: 0 0 0 2px #15803d inset;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
