@@ -1,0 +1,104 @@
+.savings-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 100px;
+  gap: 100px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin-top: -20px;
+}
+
+.savings-summary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.savings-title {
+  color: #7ba500;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.savings-label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.savings-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.savings-interest {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.savings-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically if space allows */
+  gap: 10px;
+}
+
+.savings-card {
+  width: 560px;
+  height: 120px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.savings-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.savings-emoji {
+  font-size: 2rem;
+}
+
+.savings-name {
+  color: #0d520d;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.savings-value {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.add-funds {
+  background: #0d520d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-funds:hover {
+  background: #0b400b;
+}
+
+.add-savings {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+}

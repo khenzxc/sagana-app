@@ -1,4 +1,4 @@
-/* ✅ Apply Roboto globally for the signup page */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* SIGNUP PAGE BASE */
+
 .signup-page {
   margin: 0;
   padding: 0;
@@ -23,12 +23,12 @@
   width: 100vw;
   background: url("./farmer-bg.png") center center / cover no-repeat;
   padding: 0 80px;
-  margin-top: -90px; /* adjust to navbar height */
+  margin-top: -90px;
   z-index: 0;
 }
 
 
-/* LEFT SIDE */
+
 .signup-left {
   flex: 1;
   display: flex;
@@ -43,7 +43,7 @@
   height: auto;
 }
 
-/* RIGHT SIDE */
+
 .signup-right {
   flex: 1;
   display: flex;
@@ -78,7 +78,6 @@
   background: transparent;
   margin-bottom: 20px;
 
-  /* ✅ black text */
   color: #000;
   caret-color: #0f9100;
 }
@@ -113,7 +112,8 @@
 .signup-next-btn:hover {
   background-color: #0c6e00;
 }
-/* ✅ Apply Roboto globally for the signup page */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
@@ -121,7 +121,6 @@
   box-sizing: border-box;
 }
 
-/* SIGNUP PAGE BASE */
 .signup-page {
   margin: 0;
   padding: 0;
@@ -138,11 +137,10 @@
   width: 100vw;
   background: url("./farmer-bg.png") center center / cover no-repeat;
   padding: 0 80px;
-  margin-top: -90px; /* adjust to navbar height */
+  margin-top: -90px;
   z-index: 0;
 }
 
-/* LEFT SIDE */
 .signup-left {
   flex: 1;
   display: flex;
@@ -157,7 +155,6 @@
   height: auto;
 }
 
-/* RIGHT SIDE */
 .signup-right {
   flex: 1;
   display: flex;
@@ -192,7 +189,7 @@
   background: transparent;
   margin-bottom: 20px;
 
-  color: #000; /* black text */
+  color: #000;
   caret-color: #0f9100;
 }
 
@@ -227,7 +224,219 @@
   background-color: #0c6e00;
 }
 
-/* ✅ TABLET VIEW (≤ 1024px) */
+.requirements-step h2 {
+  color: #006610;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.requirements-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.requirements-list svg {
+  color: #006610;
+  font-size: 1.2rem;
+}
+
+.back-btn {
+  background-color: transparent;
+  color: #0F9100;
+  border: 2px solid #0F9100;
+  border-radius: 14px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 48%;
+}
+
+.back-btn:hover {
+  background-color: #0F9100;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+
+.passcode-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.passcode-input {
+  width: 55px;
+  height: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid #0F9100;
+  border-radius: 12px;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.25s ease;
+}
+
+.passcode-input:focus {
+  border-color: #056710;
+  box-shadow: 0 0 6px rgba(15, 145, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.passcode-input::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.update-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+
+.yes-btn {
+  background: linear-gradient(90deg, #0f9100, #4cd964);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.yes-btn:hover {
+  background: linear-gradient(90deg, #0c7a00, #34c759);
+  transform: translateY(-2px);
+}
+
+
+.no-btn {
+  background: #f1f1f1;
+  color: #444;
+  border: 2px solid #ccc;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.no-btn:hover {
+  background: #e8e8e8;
+  transform: translateY(-2px);
+}
+.phone-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.country-code {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0 12px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-10px); 
+  cursor: default;
+}
+
+.phone-input {
+  flex: 1;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.phone-input:focus {
+  border-color: #0f9100;
+  box-shadow: 0 0 0 2px rgba(15, 145, 0, 0.15);
+}
+
+/* Optional: make both responsive */
+@media (max-width: 480px) {
+  .update-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .yes-btn,
+  .no-btn {
+    width: 100%;
+  }
+}
+
+/* ✅ Responsive tweak */
+@media (max-width: 480px) {
+  .passcode-boxes {
+    gap: 8px;
+  }
+
+  .passcode-input {
+    width: 45px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Responsive tweak for small screens */
+@media (max-width: 600px) {
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .back-btn,
+  .signup-next-btn {
+    width: 100%;
+  }
+}
+
+
+
+/* TABLET VIEW (≤ 1024px) */
 @media (max-width: 1024px) {
   .signup-container {
     flex-direction: column;
@@ -252,7 +461,7 @@
   }
 }
 
-/* ✅ MOBILE VIEW (≤ 768px) */
+/*  MOBILE VIEW (≤ 768px) */
 @media (max-width: 768px) {
   .signup-container {
     padding: 40px 20px;
@@ -285,7 +494,7 @@
   }
 }
 
-/* ✅ SMALL MOBILE (≤ 480px) */
+/* SMALL MOBILE (≤ 480px) */
 @media (max-width: 480px) {
   .signup-container {
     padding: 30px 15px;
@@ -315,19 +524,24 @@
     padding: 12px 0;
   }
 }
+
 @media (max-width: 900px) {
   .signup-container {
     flex-direction: column;
-    justify-content: center; /* ✅ center vertical */
+    justify-content: center;
+ 
     align-items: center;
     text-align: center;
     padding: 120px 20px;
-    height: 100dvh; /* ✅ dynamic viewport height — fixes background cut-off */
-    min-height: 100vh; /* fallback */
+    height: 100dvh;
+
+    min-height: 100vh;
+    /* fallback */
     width: 100vw;
     margin-top: -70px;
     background: url("./farmer-bg.png") center center / cover no-repeat;
-    background-attachment: scroll; /* ensures proper scaling */
+    background-attachment: scroll;
+
   }
 
   .signup-left {
@@ -344,4 +558,214 @@
     max-width: 360px;
     padding: 35px 25px;
   }
+}
+/* === PERSONAL INFORMATION CONTAINER ONLY === */
+.personal-info-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  gap: -40px; 
+  padding: 0 1px;
+}
+
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.signup-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+
+.personal-info-step .signup-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #000;
+  transition: border-color 0.2s ease;
+}
+
+.personal-info-step .signup-input:focus {
+  border-color: #0f9100;
+  outline: none;
+}
+
+
+.dob-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.dob-input {
+  width: 28%; 
+  text-align: center;
+  padding: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 0.85rem;
+  color: #000;
+}
+
+.dob-input:focus {
+  border-color: #0f9100;
+  outline: none;
+}
+
+.personal-info-card {
+  width: 380px !important;    
+  min-height: 420px !important; 
+  padding: 25px 20px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+/* === CONTACT INFORMATION CONTAINER === */
+.contact-info-card {
+  width: 380px !important;          
+  min-height: 340px !important;     
+  padding: 25px 20px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Inside layout (same as personal info) */
+.contact-info-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  gap: -40px; 
+  padding: 0 1px;
+}
+
+/* Inputs arranged cleanly */
+.contact-info-step .input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-info-step .input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.contact-info-step .signup-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.contact-info-step .signup-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #000;
+  transition: border-color 0.2s ease;
+}
+
+.contact-info-step .signup-input:focus {
+  border-color: #0f9100;
+  outline: none;
+}
+/* === ADDRESS INFO CONTAINER === */
+.address-info-step {
+  width: 380px;
+  height: 340px;   
+  padding: -10px 20px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  margin: -10px auto;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+
+.address-info-step .signup-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.address-info-step .signup-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #000;
+  transition: border-color 0.2s ease;
+}
+
+.address-info-step .signup-input:focus {
+  border-color: #0f9100;
+  outline: none;
+}
+
+.address-info-step .input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.address-info-step .input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  color: #333;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import BaseWalletConnect from "../components/BaseWalletConnect";
 import "../styles/signin.css";
 
 export default function SignInPage() {
@@ -9,7 +10,6 @@ export default function SignInPage() {
       <Navbar />
       <div className="signin-container">
         <div className="signin-content">
-
           {/* Left side - Logo */}
           <div className="signin-left">
             <img
@@ -22,10 +22,9 @@ export default function SignInPage() {
 
           {/* Right side - Login / Signup */}
           <div className="signin-right">
-            <button className="login-btn">
-              <span className="login-icon"></span> 
-              Log in with Base
-            </button>
+            {/* Dynamic login button */}
+            <BaseWalletConnect />
+
             <p className="create-account-text">
               Don’t have an account?{" "}
               <Link to="/signup" className="create-link">
@@ -33,7 +32,6 @@ export default function SignInPage() {
               </Link>
             </p>
           </div>
-
         </div>
       </div>
     </>

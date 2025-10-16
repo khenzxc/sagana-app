@@ -9,7 +9,7 @@ export default function About() {
                 <h1 className="about-title">About Sagana</h1>
                 <p className="about-desc">
                     <strong>Sagana is a decentralized financial inclusion app
-                    built for farmers and fisherfolks,</strong> designed to provide a secure and
+                        built for farmers and fisherfolks,</strong> designed to provide a secure and
                     transparent way to save, earn rewards, and manage finances through
                     the power of Base blockchain. It seeks to address the long-standing
                     challenges of financial access in rural communities by introducing
@@ -34,6 +34,13 @@ export default function About() {
                         <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
                         <img src={`${import.meta.env.BASE_URL}psite-logo.png`} alt="PSITE Logo" />
                     </div>
+                </div>
+                <div className="about-image-section">
+                    <img
+                        src={`${import.meta.env.BASE_URL}SAGANA (82) 2 (1).png`}
+                        alt="Sagana App Preview"
+                        className="about-phone-image"
+                    />
                 </div>
             </section>
         </div>

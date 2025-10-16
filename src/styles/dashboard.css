@@ -1,0 +1,160 @@
+/* ✅ GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ DASHBOARD CONTAINER */
+.dashboard-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ✅ ACCOUNT SECTION (FULL WIDTH + TOP FIXED POSITIONING) */
+.account-section {
+  background-color: #0F9100;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 auto;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ✅ LEFT SIDE - ACCOUNT INFO */
+.account-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem; /* 👈 slight left padding for alignment */
+}
+
+.account-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.account-balance {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eye-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; 
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 2rem; 
+}
+
+.action-card {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 210px;       
+  height: 120px;     
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.action-text {
+  flex: 1;
+}
+
+.action-text h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.action-text p {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.action-icon {
+  font-size: 1.8rem;
+  background-color: #e8f5e8;
+  color: #0b520b;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.content-area {
+  padding: 2rem 1.5rem;
+  flex: 1;
+}
+
+
+@media (max-width: 768px) {
+  .account-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100vw !important;
+  }
+
+  .account-actions {
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .action-card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .account-balance {
+    font-size: 1.6rem;
+  }
+}

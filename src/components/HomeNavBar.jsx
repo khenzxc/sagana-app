@@ -1,24 +1,30 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/homenavbar.css";
-import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle, FaBars, FaTimes } from "react-icons/fa";
 
 export default function HomeNavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        // Clear user data if you store any (e.g., localStorage/session)
-        localStorage.removeItem("user");
-        sessionStorage.removeItem("user");
+        // Remove Base wallet address from storage
+        localStorage.removeItem("walletAddress");
+        sessionStorage.removeItem("walletAddress");
 
-        // Redirect to sign-in page
+        // Optional: collapse dropdown
+        setIsOpen(false);
+
+        // Redirect to sign in
         navigate("/signin");
     };
+
 
     return (
         <nav className="navbar">
             <div className="navbar-left">
+                {/* Logo */}
                 <div className="logo-container">
                     <img
                         src={`${import.meta.env.BASE_URL}sagana-logo1.png`}
@@ -28,17 +34,26 @@ export default function HomeNavBar() {
                     <span className="logo-text">Sagana</span>
                 </div>
 
-                <div className="nav-links">
-                    <Link to="/dashboard">Dashboard</Link>
-                    <Link to="/savings">Savings</Link>
-                    <Link to="/rewards">Rewards</Link>
-                    <Link to="/budgeting">Budgeting</Link>
-                    <Link to="/price-alerts">Price Alerts</Link>
-                    <Link to="/transactions">Transactions</Link>
+                {/* Hamburger button for mobile */}
+                <div
+                    className="hamburger"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+                </div>
+
+                {/* Navigation links */}
+                <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+                    <Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link>
+                    <Link to="/savings" onClick={() => setMenuOpen(false)}>Savings</Link>
+                    <Link to="/rewards" onClick={() => setMenuOpen(false)}>Rewards</Link>
+                    <Link to="/budgeting" onClick={() => setMenuOpen(false)}>Budgeting</Link>
+                    <Link to="/price-alerts" onClick={() => setMenuOpen(false)}>Price Alerts</Link>
+                    <Link to="/transactions" onClick={() => setMenuOpen(false)}>Transactions</Link>
                 </div>
             </div>
 
-            {/* Right side - Profile icon */}
+            {/* Profile icon */}
             <div className="navbar-right">
                 <div
                     className={`profile-container ${isOpen ? "active" : ""}`}

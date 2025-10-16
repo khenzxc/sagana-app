@@ -40,7 +40,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 60px;
   margin-top: 60px;
 }
 
@@ -63,6 +63,7 @@ body {
   height: auto;
   margin-bottom: -7%;
   margin-top: -140px;
+
 }
 
 .signin-right {
