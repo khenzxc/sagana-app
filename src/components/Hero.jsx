@@ -19,7 +19,7 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="button-container">
-          {/* ✅ Dynamic Get Started button */}
+          {/*  Dynamic Get Started button */}
           <BaseWalletConnect />
 
           {/* Watch Video button */}
@@ -27,7 +27,7 @@ export default function Hero() {
             className="secondary-btn"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1NiG3FNATadZPVs_pMfC9UhPeg1j3Hvnn/view?usp=drivesdk",
+                "https://drive.google.com/file/d/1IstXsIJRdHea4PkZBGxLo1WEBbV1eruh/view?usp=sharing",
                 "_blank"
               )
             }

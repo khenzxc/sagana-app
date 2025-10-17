@@ -18,7 +18,7 @@ import GantimpalaPage from "./components/GantimpalaPage";
 import ScrollToTop from "./components/ScrollToTop";
 import SavingsPage from "./components/SavingsPage";
 import ProfilePage from "./components/ProfilePage";
-import ProtectedRoute from "./components/ProtectedRoute"; // ✅ ADD THIS
+import ProtectedRoute from "./components/ProtectedRoute"; 
 
 function Layout({ children }) {
   return (

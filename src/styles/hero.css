@@ -62,8 +62,8 @@
   height: auto;
   object-fit: cover;
   border-radius: 20px;
-  opacity: 0.9; /* optional: for semi-transparent effect */
-  mix-blend-mode: multiply; /* optional: makes video blend with background */
+  opacity: 0.9; 
+  mix-blend-mode: multiply; 
   display: block;
   margin-left: auto;
   margin-right: 10rem;
@@ -122,7 +122,6 @@
   font-size: 1.5rem;
 }
 
-/* LOGO SECTION */
 .logo-section {
   display: flex;
   justify-content: center;
@@ -191,9 +190,8 @@
     overflow-x: hidden;
   }
 
-  /*  Put logo on top in mobile */
   .hero-grid {
-    flex-direction: column-reverse; /* logo goes to top */
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -202,7 +200,7 @@
   }
 
   .hero-logo {
-    order: -1; /* make logo appear first */
+    order: -1; 
     width: 100%;
     max-width: 400px;
     margin: 0 auto 1rem;

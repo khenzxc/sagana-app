@@ -6,7 +6,7 @@ export default function DashboardPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // ✅ Check if user is logged in
+    //  Check if user is logged in
     const user = localStorage.getItem("user") || sessionStorage.getItem("user");
 
     if (!user) {

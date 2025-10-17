@@ -5,7 +5,7 @@ import "../styles/gantimpala.css";
 export default function GantimpalaPage() {
   const navigate = useNavigate();
 
-  // ✅ Protect the page
+  // Protect the page
   useEffect(() => {
     const walletAddress = localStorage.getItem("walletAddress");
     if (!walletAddress) {
